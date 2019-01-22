@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 // import logo from './logo.svg'
-import './App.css'
 import './sass/main.scss'
 import { Layout } from 'antd'
 import SiteHeader from './components/Header/SiteHeader'
