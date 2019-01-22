@@ -9,6 +9,7 @@ class App extends Component {
       <div className="App">
         <Layout>
           <SiteHeader />
+          {this.props.children}
         </Layout>
       </div>
     )
