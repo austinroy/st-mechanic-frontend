@@ -3,12 +3,18 @@ import ReactDOM from 'react-dom'
 import App from './App'
 import * as serviceWorker from './serviceWorker'
 import { BrowserRouter } from 'react-router-dom'
-import Routes from './routes';
+import Routes from './routes'
+import { Provider } from 'react-redux'
+import configureStore from './redux/store'
+
+const store = configureStore({})
 
 ReactDOM.render(
-  <BrowserRouter>
-    <Routes />
-  </BrowserRouter>,
+  <Provider store={store}>
+    <BrowserRouter>
+      <Routes />
+    </BrowserRouter>
+  </Provider>,
   document.getElementById('root')
 )
 
