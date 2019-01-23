@@ -13,3 +13,35 @@ $disabled-color : rgba(0, 0, 0, .25);            // disable state color
 $border-radius-base: 4px;                        // major border radius
 $border-color-base: #d9d9d9;                     // major border color
 $box-shadow-base: 0 2px 8px rgba(0, 0, 0, .15);  // major shadow for layers
+
+// $color-primary: #f76b1c;
+// $color-primary-light :#f2d50f;
+// $color-primary-dark :  #da0641;
+
+$color-primary: #e98e20;
+$color-primary-light : #f2d50f;
+$color-primary-dark :  #da0641;
+
+$color-secondary-light: #ffb900;
+$color-secondary-dark: #ff7730;
+
+$color-tertiary-light: #20f9f6;
+$color-tertiary-dark: #b1bede;
+
+$color-grey-light-1: #f7f7f7;
+$color-grey-light-2: #eee;
+
+$color-grey-dark: #777;
+$color-grey-dark-2: #999;
+$color-grey-dark-3: #333;
+
+$color-white: #fff;
+$color-black: #000;
+
+// font
+$default-font-size: 1.6rem;
+
+//  grid
+$grid-width: 114rem;
+$gutter-vertical: 8rem;
+$gutter-horizontal: 6rem;

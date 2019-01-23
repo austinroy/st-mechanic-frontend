@@ -1,0 +1,33 @@
+.header-home {
+  height: 95vh;
+  background-image: linear-gradient(
+      to left top,
+      rgba($color-primary-light, 0.7),
+      rgba($color-primary-dark, 0.7)),
+    url(../assets/img/keys-1380134.jpg);
+  background-size: cover;
+  background-position: center;
+
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+  position: relative;
+  
+  .__logo-box {
+      position: absolute;
+      top: 4rem;
+      left: 4rem;
+    }
+    
+    .__text-box {
+      font-family: "Sirin Stencil", cursive;
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate( -50%, -50%);
+      text-align: center;
+    }
+    
+    .__logo {
+      height: 3.5rem;
+    }
+}
