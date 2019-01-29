@@ -10,10 +10,10 @@ const Header = () => {
       <div className="__text-box">
         <h1 className="heading-primary">
           <span className="heading-primary--main">
-            Bringing TRUST, TRASPARENCY & CONVENEINCE{' '}
+            TRUST, TRASPARENCY & CONVENEINCE
           </span>
           <span className="heading-primary--sub">
-            to your repair experience
+            brought to your repair experience
           </span>
         </h1>
 

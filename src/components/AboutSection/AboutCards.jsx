@@ -31,12 +31,14 @@ const AboutCard = props => {
   }
 
   return (
-    <Card
-      style={{ width: 300 }}
-      cover={<Lottie options={defaultOptions} height={300} width={300} />}
-    >
-      <Meta title={title} description={description} />
-    </Card>
+    <div className="u-center-content">
+      <Card
+        style={{ width: 300 }}
+        cover={<Lottie options={defaultOptions} height={300} width={300} />}
+      >
+        <Meta title={title} description={description} />
+      </Card>
+    </div>
   )
 }
 

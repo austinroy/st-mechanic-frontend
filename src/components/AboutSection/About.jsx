@@ -7,7 +7,7 @@ const About = () => {
       <div className="u-center-text u-margin-bottom-big">
         <h2 className="heading-secondary">Get a garage in a few clicks</h2>
       </div>
-      <div className="about-cards">
+      <div className="about-cards u-center-text">
         <AboutCard
           cardName="quotes"
           title="Estimate then Quotes in few clicks"
@@ -30,7 +30,7 @@ const About = () => {
         <div className="u-center-text">
           <h2>Ours Transparent Pricing</h2>
         </div>
-        <div style={{ margin: '2rem' }}>
+        <div className="u-margin-bottom-big" style={{ padding: '30px' }}>
           <p>
             We use 100s of data points to give you the best industry average of
             how much it will cost to repair your car even before garages send
