@@ -5,18 +5,20 @@ const Header = () => {
   return (
     <header className="header-home">
       <div className="__logo-box">
-        <img src={logo} className="__logo" alt="logo" />
+        <img src={logo} className="__logo" alt="logo" /> St Mechanic
       </div>
       <div className="__text-box">
         <h1 className="heading-primary">
-          <span className="heading-primary--main">St. Mechanic</span>
+          <span className="heading-primary--main">
+            Bringing TRUST, TRASPARENCY & CONVENEINCE{' '}
+          </span>
           <span className="heading-primary--sub">
-            Car servicing at the click of a button
+            to your repair experience
           </span>
         </h1>
 
         <a href="#" className="btn btn--white btn--animated">
-          Fix me up
+          Get a Quote
         </a>
       </div>
     </header>
