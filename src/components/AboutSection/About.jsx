@@ -30,7 +30,7 @@ const About = () => {
         <div className="u-center-text u-margin-top-medium">
           <h2>Ours Transparent Pricing</h2>
         </div>
-        <div className="u-margin-bottom-big" style={{ padding: '30px' }}>
+        <div className="u-margin-bottom-big u-center-text">
           <p>
             We use 100s of data points to give you the best industry average of
             how much it will cost to repair your car even before garages send
