@@ -27,7 +27,7 @@ const About = () => {
         />
       </div>
       <div className="about-pricing">
-        <div className="u-center-text">
+        <div className="u-center-text u-margin-top-medium">
           <h2>Ours Transparent Pricing</h2>
         </div>
         <div className="u-margin-bottom-big" style={{ padding: '30px' }}>
