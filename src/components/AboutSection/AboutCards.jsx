@@ -34,7 +34,7 @@ const AboutCard = props => {
     <div className="u-center-content">
       <Card
         style={{ width: 300 }}
-        cover={<Lottie options={defaultOptions} height={300} width={300} />}
+        cover={<Lottie options={defaultOptions} height={150} width={150} />}
       >
         <Meta title={title} description={description} />
       </Card>
