@@ -8,7 +8,7 @@ class App extends Component {
     return (
       <div className="App">
         <SiteHeader />
-        <Layout>{this.props.children}</Layout>
+        <Layout style={{ minHeight: '90vh' }}>{this.props.children}</Layout>
         <Layout>
           <SiteFooter />
         </Layout>
