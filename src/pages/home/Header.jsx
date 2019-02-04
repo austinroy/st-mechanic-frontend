@@ -8,7 +8,7 @@ const Header = () => {
           <span className="slogan-top">We bring</span>
           <br />
           <span className="slogan-middle">
-            TRUST, TRASPARENCY & CONVENEINCE
+            TRUST, TRASPARENCY & CONVENIENCE
           </span>
           <br />
           <span className="slogan-bottom">To your repair experience</span>

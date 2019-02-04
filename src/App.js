@@ -7,11 +7,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <SiteHeader />
-        <Layout style={{ minHeight: '90vh' }}>{this.props.children}</Layout>
-        <Layout>
-          <SiteFooter />
-        </Layout>
+        {this.props.children}
+        <SiteFooter />
       </div>
     )
   }

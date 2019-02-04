@@ -1,25 +1,65 @@
 .about-section{
-  position: absolute;
+  // position: absolute;
   width: 1440px;
   height: 1227px;
-  left: -2px;
-  top: 798px;
+  margin: auto;
+
 
   background: #FAFAFA;
 
-  .about-header{
-    position: absolute;
-    width: 577px;
-    height: 36px;
-    left: 424px;
-    top: 1088px;
+  .about-services{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    padding: 10px;
 
+    .services{
+
+      color: #000000;
+      &-1{
+        position: relative;
+        margin-right: auto;
+        width: 326px;
+        height: 97px;
+      }
+      &-2{
+        position: relative;
+        margin: 0 auto;
+        width: 326px;
+        height: 97px;
+      }
+      &-3{
+        position: relative;
+        margin-left: auto;
+        width: 326px;
+        height: 97px;
+      }
+    }
+  }
+  .service-description{
     font-family: Roboto;
     font-style: normal;
-    font-weight: bold;
-    line-height: normal;
-    font-size: 30px;
+    font-weight: 500;
+    line-height: 48px;
+    font-size: 24px;
+    text-align: center;
 
-    color: #333333;
+    color: #828282;
+  }
+  .service-label{
+    width: 326px;
+    height: 97px;
+
+    font-family: Rock Salt;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 97px;
+    font-size: 24px;
+    text-align: center;
+
+    color: #000000;
   }
 }
+
+
+  

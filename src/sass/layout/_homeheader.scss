@@ -1,16 +1,19 @@
 .header-home {
-  position: absolute;
-  width: 1332px;
-  height: 789px;
-  left: 54px;
-  top: 138px;
+  position: relative; 
+  width: 100%;
+  height: 822.87px;
+  // left: 25px;
+  top: 104px;
+  display: block;
 
   background: rgba(0, 0, 0, 0.21);
-
-  // -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
-  // clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
-  position: relative;
-  padding: 5rem;
+  background-image: linear-gradient(
+        to left top,
+        rgba(black, 0.2),
+        rgba(black, 0.2)),
+      url(../assets/img/71af7228808379.5aa0ce53a7ee1.jpg);
+  background-size: cover;
+  // padding: 5rem;
   margin: 0 auto;
   
   .header-content{
