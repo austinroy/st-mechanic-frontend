@@ -1,18 +1,8 @@
 import React from 'react'
 import { Empty } from 'antd'
+import Exception from 'ant-design-pro/lib/Exception'
+import 'ant-design-pro/dist/ant-design-pro.css'
 
-const NotFound = () => (
-  <Empty
-    description={
-      <span>
-        <h1>Error 404</h1>
-        <br />
-        Page Not Found
-        <br />
-        Return <a href="/">Home</a>
-      </span>
-    }
-  />
-)
+const NotFound = () => <Exception type="404" desc="Page Not Found" />
 
 export default NotFound

@@ -1,0 +1,25 @@
+.site-header {
+  
+  .__logo-box {
+      position: absolute;
+      left: 4rem;
+      display: inline-block
+    }
+    
+    .__text-box {
+      font-family: "Sirin Stencil", cursive;
+      position: relative;
+      left: 50%;
+      transform: translate( -50%, -50%);
+      text-align: center;
+    }
+    
+    .__logo {
+      height: 3.5rem;
+    }
+
+    .nav-menu{
+      position: relative;
+      margin-left: 12rem;
+    }
+}

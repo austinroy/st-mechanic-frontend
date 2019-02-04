@@ -1,33 +1,65 @@
 .header-home {
-  height: 95vh;
-  background-image: linear-gradient(
-      to left top,
-      rgba($color-primary-light, 0.7),
-      rgba($color-primary-dark, 0.7)),
-    url(../assets/img/architecture-automobile-cars-63294.jpg);
-  background-size: cover;
-  background-position: center;
+  position: absolute;
+  width: 1332px;
+  height: 789px;
+  left: 54px;
+  top: 138px;
 
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+  background: rgba(0, 0, 0, 0.21);
+
+  // -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+  // clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
   position: relative;
+  padding: 5rem;
+  margin: 0 auto;
   
-  .__logo-box {
+  .header-content{
+    .header-slogan{
+      .slogan-top{
+        position: absolute;
+        width: 143px;
+        height: 43px;
+        left: 134px;
+        top: 253px;
+
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        font-size: 36px;
+
+        color: #FFFFFF;
+      }
+    .slogan-middle{
       position: absolute;
-      top: 4rem;
-      left: 4rem;
+      width: 669px;
+      height: 150px;
+      left: 134px;
+      top: 316px;
+
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: bold;
+      line-height: normal;
+      font-size: 64px;
+
+      color: #FFFFFF;
     }
-    
-    .__text-box {
-      font-family: "Sirin Stencil", cursive;
+    .slogan-bottom{
       position: absolute;
-      top: 40%;
-      left: 50%;
-      transform: translate( -50%, -50%);
-      text-align: center;
+      width: 406px;
+      height: 43px;
+      left: 134px;
+      top: 486px;
+
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      font-size: 36px;
+
+      color: #FFFFFF;
     }
-    
-    .__logo {
-      height: 3.5rem;
     }
+  }
 }
