@@ -1,12 +1,13 @@
 .home-nav{
-
+  .header{
+    background: $color-white;
+  }
   .logo-box{
     position: absolute;
     width: 19.8rem;
     height: 6.6rem;
     left: 5.4rem;
-    top: 2.2rem;
-    background: url(../assets/logos/Logo-Black-&-Yellow.png)
+    background: $color-white;
   }
 
   .login-btn{
@@ -23,5 +24,64 @@
     height: 4rem;
     left: 114rem;
     top: 3.5rem;
+  }
+
+  .__logo-box {
+    position: absolute;
+    left: 4rem;
+    display: inline-block
+  }
+  
+  .__text-box {
+    font-family: "Sirin Stencil", cursive;
+    position: relative;
+    left: 50%;
+    transform: translate( -50%, -50%);
+    text-align: center;
+  }
+  
+  .__logo {
+    height: 3.5rem;
+    background: $color-white;
+    margin-top: 1rem;
+  }
+
+  .nav-menu{
+    position: relative;
+    margin-left: 20rem;
+    background-color: $color-white;
+    border-bottom: 0;
+  }
+  .btn-login{
+    position: relative;
+    width: 89px;
+    height: 40px;
+    border: 0px;
+    background: #F9B932;
+    border-radius: 7px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-size: 1.5rem;
+
+    color: #FFFFFF;
+  }
+  .btn-signup{
+    position: relative;
+    width: 89px;
+    height: 40px;
+    border: 1px solid #F9B932;
+    background: #FFFFFF;
+    border-radius: 7px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-size: 1.5rem;
+
+    color: #F9B932;
   }
 };
