@@ -3,6 +3,7 @@ import Header from './Header.jsx'
 import About from './About.jsx'
 import HomeNav from './HomeNav.jsx'
 import Pricing from './Pricing.jsx'
+import GetQuotes from './GetQuotes.jsx'
 
 class Home extends Component {
   render() {
@@ -12,6 +13,7 @@ class Home extends Component {
         <Header />
         <About />
         <Pricing />
+        <GetQuotes />
       </div>
     )
   }
