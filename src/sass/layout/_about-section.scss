@@ -1,7 +1,7 @@
 .about-section{
   // position: absolute;
-  width: 1440px;
-  height: 1227px;
+  width: 144rem;
+  height: 123rem;
   margin: auto;
 
 
@@ -10,8 +10,8 @@
   .about-services{
     display: grid;
     grid-template-columns: auto auto auto;
-    grid-gap: 10px;
-    padding: 10px;
+    grid-gap: 1rem;
+    padding: 1rem;
 
     .services{
 
@@ -19,20 +19,20 @@
       &-1{
         position: relative;
         margin-right: auto;
-        width: 326px;
-        height: 97px;
+        width: 33rem;
+        height: 10rem;
       }
       &-2{
         position: relative;
         margin: 0 auto;
-        width: 326px;
-        height: 97px;
+        width: 33rem;
+        height: 10rem;
       }
       &-3{
         position: relative;
         margin-left: auto;
-        width: 326px;
-        height: 97px;
+        width: 33rem;
+        height: 10rem;
       }
     }
   }
@@ -40,21 +40,21 @@
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
-    line-height: 48px;
-    font-size: 24px;
+    line-height: 5rem;
+    font-size: 2.5rem;
     text-align: center;
 
     color: #828282;
   }
   .service-label{
-    width: 326px;
-    height: 97px;
+    width: 32.5rem;
+    height: 10rem;
 
     font-family: Rock Salt;
     font-style: normal;
     font-weight: normal;
-    line-height: 97px;
-    font-size: 24px;
+    line-height: 10rem;
+    font-size: 2.4rem;
     text-align: center;
 
     color: #000000;

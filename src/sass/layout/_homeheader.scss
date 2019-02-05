@@ -1,16 +1,15 @@
 .header-home {
   position: relative; 
   width: 100%;
-  height: 822.87px;
-  // left: 25px;
-  top: 104px;
+  height: 82.3rem;
+  top: 10.4rem;
   display: block;
 
   background: rgba(0, 0, 0, 0.21);
   background-image: linear-gradient(
         to left top,
         rgba(black, 0.2),
-        rgba(black, 0.2)),
+        rgba(black, 0.4)),
       url(../assets/img/71af7228808379.5aa0ce53a7ee1.jpg);
   background-size: cover;
   // padding: 5rem;
@@ -20,46 +19,46 @@
     .header-slogan{
       .slogan-top{
         position: absolute;
-        width: 143px;
-        height: 43px;
-        left: 134px;
-        top: 253px;
+        width: 14.3rem;
+        height: 4.3rem;
+        left: 13.4rem;
+        top: 10.0rem;
 
         font-family: Roboto;
         font-style: normal;
         font-weight: 500;
         line-height: normal;
-        font-size: 36px;
+        font-size: 3.6rem;
 
         color: #FFFFFF;
       }
     .slogan-middle{
       position: absolute;
-      width: 669px;
-      height: 150px;
-      left: 134px;
-      top: 316px;
+      width: 66.9rem;
+      height: 15.0rem;
+      left: 13.4rem;
+      top: 16.3rem;
 
       font-family: Roboto;
       font-style: normal;
       font-weight: bold;
       line-height: normal;
-      font-size: 64px;
+      font-size: 6.4rem;
 
       color: #FFFFFF;
     }
     .slogan-bottom{
       position: absolute;
-      width: 406px;
-      height: 43px;
-      left: 134px;
-      top: 486px;
+      width: 40.6rem;
+      height: 4.3rem;
+      left: 13.4rem;
+      top: 33.3rem;
 
       font-family: Roboto;
       font-style: normal;
       font-weight: 500;
       line-height: normal;
-      font-size: 36px;
+      font-size: 3.6rem;
 
       color: #FFFFFF;
     }
