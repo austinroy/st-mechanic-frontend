@@ -6,7 +6,7 @@ export const changeRoute = route => dispatch => {
 
 export const changeRouteSuccess = route => {
   return {
-    type: 'CHANGE_ROUTE_SUCCESS',
+    type: actions.CHANGE_ROUTE_SUCCESS,
     activeRoute: route
   }
 }
