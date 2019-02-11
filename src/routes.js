@@ -6,6 +6,8 @@ import NotFound from './pages/404/NotFound'
 import LoginForm from './components/Forms/LoginForm/LoginForm'
 import SignUpForm from './components/Forms/SignUp/SignUpForm'
 import GarageDashboard from './pages/GarageDashboard/GarageDashboard'
+import GarageLogin from './pages/Auth/GarageLogin'
+import GarageSignUp from './pages/Auth/GarageSignUp'
 
 const Routes = () => (
   <App>
@@ -13,6 +15,8 @@ const Routes = () => (
       <Route exact path="/" component={Home} />
       <Route exact path="/login" component={LoginForm} />
       <Route exact path="/signup" component={SignUpForm} />
+      <Route exact path="/garage-login" component={GarageLogin} />
+      <Route exact path="/garage-signup" component={GarageSignUp} />
       <Route exact path="/garagedashboard" component={GarageDashboard} />
       <Route component={NotFound} />
     </Switch>
