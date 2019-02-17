@@ -1,0 +1,46 @@
+.garage-signup{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100vw;
+  min-height: 100vh;
+  margin: 0 auto;
+  top: 500px;
+  .img-signup{
+    width: 100%;
+  }
+  .signup-logo{
+    height: 100px;
+    margin-top: -300px;
+  }
+  .signup-form{
+    max-width: 600px;
+    margin: 0 auto;
+    padding-top: 20rem;
+    
+    .signup-header{      
+      font-family: Work Sans;
+      font-style: normal;
+      font-weight: bold;
+      line-height: 71px;
+      font-size: 36px;
+
+      color: #565264;
+    }
+    .signup-subheader{
+      font-family: Work Sans;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 36px;
+      font-size: 18px;
+
+      color: #9B9B9B;
+    }
+    .login-link{
+      color: $color-primary;
+      &:hover{
+        color: $color-primary-light;
+        transform: scale(3.5)
+      }
+    }
+  }
+}
