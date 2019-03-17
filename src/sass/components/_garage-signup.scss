@@ -5,7 +5,7 @@
   min-height: 100vh;
   margin: 0 auto;
   top: 500px;
-  background-color: rgba(black, 0.9);
+  background-color: rgba(black, 1);
   .img-signup{
     width: 100%;
   }
@@ -20,6 +20,7 @@
   }
 
   .intro-text{
+    font-family: Work Sans;
     color: white;
     font-size: 5rem;
     text-align: left;
@@ -29,7 +30,12 @@
     width: 70%;
   }
 
+  .underline-bottom{
+    border-bottom: 2px solid $color-primary-light;
+  }
+
   .intro-sub{
+    font-family: Work Sans;
     color: white;
     font-size: 2rem;
     text-align: left;
@@ -46,7 +52,7 @@
       padding: .5rem;
     
       background: $color-white;
-      border-radius: 1rem;
+      border-radius: .5rem;
       border: 0px;
       color: $color-black;
       font-size: 1.5rem;
@@ -56,9 +62,42 @@
     margin: 5rem;
   }
   .signup-form{
-    max-width: 600px;
     margin: 0 auto;
     padding-top: 20rem;
+
+    .top-links{
+      text-transform: uppercase;
+      color: $color-white;
+      display: block;
+      .link-signup{
+        float: left;
+      }
+      .link-login{
+        float: right;
+      }
+    }
+
+    .bottom-link{
+      position: fixed;
+      text-transform: uppercase;
+      bottom: 0;
+      left: 50%;
+      right: 0;
+      height: 7rem;
+      background-color: rgba($color-grey-dark-3, 0.5);
+      color: white;
+      display: grid;
+      grid-template-columns: 10fr 1fr;
+      .text{
+        margin-top: 1.5rem;
+        font-size: 2rem;
+      }
+      .next-icon{
+        background-color: $color-primary;
+        color: $color-black;
+        font-size: 3rem;
+      }
+    }
     
     .signup-header{      
       font-family: Work Sans;
@@ -85,6 +124,16 @@
         transform: scale(3.5)
       }
     }
+  }
+  i.down-arrow{
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    top: 50%;
+    margin-left: 1rem;
   }
   i.down-arrow{
     border: solid black;
