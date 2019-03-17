@@ -1,17 +1,25 @@
 import React, { Component } from 'react'
 import { Input, Button, Icon } from 'antd'
 import Banner from '../../assets/img/standard-street-view 2.png'
-import Logo from '../../assets/logos/Logo-Black-&-Yellow.png'
+import Logo from '../../assets/logos/Logo-White-&-Yellow.png'
 
 class GarageSignUp extends Component {
   render() {
     return (
       <div className="garage-signup">
         <div className="signup-image">
-          <img src={Banner} alt="signup-image" className="img-signup" />
+          <img src={Logo} alt="logo" className="signup-logo" />
+          <p className="intro-text">Choose the best hands for your car</p>
+          <p className="intro-sub">
+            One stop shopping for all your automotive needs
+            <br />
+            Join us today
+          </p>
+          <button className="btn-more">
+            View More <i className="down-arrow"> </i>
+          </button>
         </div>
         <div className="signup-form">
-          <img src={Logo} alt="logo" className="signup-logo" />
           <br />
           <span className="signup-header">Try us out!</span>
           <br />

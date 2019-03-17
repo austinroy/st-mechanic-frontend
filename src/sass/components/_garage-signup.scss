@@ -5,12 +5,55 @@
   min-height: 100vh;
   margin: 0 auto;
   top: 500px;
+  background-color: rgba(black, 0.9);
   .img-signup{
     width: 100%;
   }
+  .signup-image{
+    background-image: linear-gradient(
+        to left top,
+        rgba($color-black, 0.7),
+        rgba($color-black, 0.7)),
+      url(../assets/img/architecture-automobile-cars-63294.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .intro-text{
+    color: white;
+    font-size: 5rem;
+    text-align: left;
+    padding: 2rem;
+    margin-left: 2rem;
+    margin-top: 5rem;
+    width: 70%;
+  }
+
+  .intro-sub{
+    color: white;
+    font-size: 2rem;
+    text-align: left;
+    padding: 2rem;
+    margin-left: 2rem;
+    margin-top: 5rem;
+    width: 75%;
+  }
+
+  .btn-more{
+      width: 12rem;
+      height: 5.1rem;
+      margin-left: 4rem;
+      padding: .5rem;
+    
+      background: $color-white;
+      border-radius: 1rem;
+      border: 0px;
+      color: $color-black;
+      font-size: 1.5rem;
+  }
   .signup-logo{
     height: 100px;
-    margin-top: -300px;
+    margin: 5rem;
   }
   .signup-form{
     max-width: 600px;
@@ -35,12 +78,22 @@
 
       color: #9B9B9B;
     }
-    .login-link{
+    .signup-link{
       color: $color-primary;
       &:hover{
         color: $color-primary-light;
         transform: scale(3.5)
       }
     }
+  }
+  i.down-arrow{
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    top: 50%;
+    margin-left: 1rem;
   }
 }
