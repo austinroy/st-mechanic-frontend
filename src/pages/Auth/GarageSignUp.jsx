@@ -63,7 +63,9 @@ class GarageSignUp extends Component {
           <div>
             <div className="bottom-link">
               <span className="text u-center-text">let me in</span>
-              <span className="next-icon u-center-text"> > </span>
+              <span className="next-icon u-center-text">
+                <i className="right-arrow" />
+              </span>
             </div>
           </div>
         </div>
