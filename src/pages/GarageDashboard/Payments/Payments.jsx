@@ -1,5 +1,8 @@
 import React, { Component } from 'react'
 import { Tabs } from 'antd'
+import ReceivedTable from './Received'
+import TransferredTable from './Transferred'
+import DisputedTable from './Disputed'
 
 const { TabPane } = Tabs
 
@@ -9,13 +12,13 @@ class Payments extends Component {
       <div className="payments" style={{ padding: '7rem' }}>
         <Tabs defaultActiveKey="1">
           <TabPane tab="RECEIVED" key="1">
-            INCOMING REQUESTS
+            <ReceivedTable />
           </TabPane>
           <TabPane tab="TRANSFERRED" key="2">
-            Content of Tab Pane 2
+            <TransferredTable />
           </TabPane>
           <TabPane tab="DISPUTED" key="3">
-            Content of Tab Pane 3
+            <DisputedTable />
           </TabPane>
         </Tabs>
       </div>
