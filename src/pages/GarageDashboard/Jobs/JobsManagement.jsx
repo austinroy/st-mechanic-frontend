@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import { Tabs } from 'antd'
 import RequestTable from './IncomingRequests'
 import BookingTable from './Bookings'
+import ActiveJobTable from './ActiveJobs';
+import CompletedJobTable from './CompletedJobs';
 
 const { TabPane } = Tabs
 
@@ -17,10 +19,10 @@ class JobsManagement extends Component {
             <BookingTable />
           </TabPane>
           <TabPane tab="ACTIVE JOBS" key="3">
-            Content of Tab Pane 3
+            <ActiveJobTable />
           </TabPane>
           <TabPane tab="COMPLETE JOBS" key="4">
-            Content of Tab Pane 3
+            <CompletedJobTable />
           </TabPane>
         </Tabs>
       </div>
