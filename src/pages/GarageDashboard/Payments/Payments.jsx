@@ -1,13 +1,12 @@
 import React, { Component } from 'react'
 import { Tabs } from 'antd'
-import { AST_SymbolConst } from 'terser';
 
 const { TabPane } = Tabs
 
 class Payments extends Component {
   render() {
     return (
-      <div className="payments" style={{ padding: '7rem'}}>
+      <div className="payments" style={{ padding: '7rem' }}>
         <Tabs defaultActiveKey="1">
           <TabPane tab="RECEIVED" key="1">
             INCOMING REQUESTS

@@ -1,11 +1,9 @@
 import React, { Component } from 'react'
-import SideMenu from './SideMenu'
-import { Route, Switch } from 'react-router-dom'
 import { Tabs } from 'antd'
 import JobsManagement from './Jobs/JobsManagement'
 import TopBar from './TopBar'
-import Payments from './Payments/Payments';
-import PartsManagement from './Parts/PartsManagement';
+import Payments from './Payments/Payments'
+import PartsManagement from './Parts/PartsManagement'
 
 const { TabPane } = Tabs
 
