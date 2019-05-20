@@ -1,9 +1,8 @@
 import React from 'react'
-import { Modal, Button } from 'antd';
+import { Modal, Button, Input, Form, DatePicker, Select } from 'antd';
 
 class BookingModal extends React.Component {
   state = {
-    ModalText: 'Content of the modal',
     visible: false,
     confirmLoading: false,
   }
@@ -12,30 +11,6 @@ class BookingModal extends React.Component {
     this.setState({
       visible: true,
     });
-  }
-
-  renderServiceDetails = service => {
-    return (
-      <div className="service-det">
-        <h2>SERVICE DESCRIPTION</h2>
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr'}}>
-          <div className='titles' style={{ display: 'grid', gridTemplateColumns: 'auto'}}>
-            <div>CATEGORY</div>
-            <br/>
-            <div>SERVICE TYPE</div>
-            <br/>
-            <div>NOTES</div>
-          </div>
-          <div classNam='details' style={{ display: 'grid', gridTemplateColumns: 'auto'}}>
-            <div>{service.category}</div>
-            <br/>
-            <div>{service.type}</div>
-            <br/>
-            <div>{service.notes}</div>
-          </div>
-        </div>
-      </div>
-    )
   }
 
   handleOk = () => {
@@ -58,9 +33,35 @@ class BookingModal extends React.Component {
     });
   }
 
+  scheduleForm = () => {
+    return (
+      <Form style={{ marginTop: '2rem'}}>
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 2fr'}}>
+            <div>ASSIGN MECHANIC</div>
+            <Input />
+        </div>
+        <br/>
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 2fr'}}>
+            <div>UPDATE DATE & TIME</div>
+            <DatePicker showTime format="YYYY-MM-DD HH:mm"/>
+        </div>
+        <br/>
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 2fr'}}>
+            <div>STATUS</div>
+            <Select />
+        </div>
+        <br/>
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 2fr'}}>
+            <div>TOTAL COST</div>
+            <Input />
+        </div>
+      </Form>
+    )
+  }
+
   render() {
     const { service } = this.props
-    const title = `RESPOND TO ${service.name}`
+    const title = `SCHEDULE ${service.name}`
     const { visible, confirmLoading, ModalText } = this.state;
     return (
       <div>
@@ -73,9 +74,10 @@ class BookingModal extends React.Component {
           onOk={this.handleOk}
           confirmLoading={confirmLoading}
           onCancel={this.handleCancel}
+          okText='Schedule'
+          width={700}
         >
-          {this.renderServiceDetails(service)}
-          <p>{ModalText}</p>
+        {this.scheduleForm()}
         </Modal>
       </div>
     );
