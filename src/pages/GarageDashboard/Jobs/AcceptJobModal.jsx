@@ -1,7 +1,9 @@
 import React from 'react'
 import { Modal, Button, Input, Form, Radio, Divider } from 'antd'
 import Lottie from 'react-lottie'
-import animationData from '../../../assets/lotties/credit-card.json'
+import cardAnimationData from '../../../assets/lotties/credit-card.json'
+import mpesaAnimationData from '../../../assets/lotties/mpesa.json'
+import cashAnimationData from '../../../assets/lotties/cash-payment.json'
 
 const RadioGroup = Radio.Group
 
@@ -54,12 +56,28 @@ class AcceptJobModal extends React.Component {
   paymentForm = () => {
     const {method} = this.state
     if (method === 'Mpesa'){
+      const defaultOptions = {
+        loop: true,
+        autoplay: true, 
+        animationData: mpesaAnimationData,
+        rendererSettings: {
+          preserveAspectRatio: 'xMidYMid slice'
+        }
+      }
       return (
-        <div>
-          CUSTOMER NUMBER
-          <br/>
-          <br/>
-          <Input/>
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr' }}>
+          <div>
+            PHONE NUMBER
+            <Lottie options={defaultOptions}
+              height={250}
+              width={250}
+            />
+          </div>
+          <div>
+            <br/>
+            <br/>
+            <Input placeholder='Enter Phone Number'/>
+          </div>
         </div>
       )
     }
@@ -67,7 +85,7 @@ class AcceptJobModal extends React.Component {
       const defaultOptions = {
         loop: true,
         autoplay: true, 
-        animationData: animationData,
+        animationData: cardAnimationData,
         rendererSettings: {
           preserveAspectRatio: 'xMidYMid slice'
         }
@@ -90,11 +108,26 @@ class AcceptJobModal extends React.Component {
       )
     }
     if (method === 'Cash'){
+      const defaultOptions = {
+        loop: true,
+        autoplay: true, 
+        animationData: cashAnimationData,
+        rendererSettings: {
+          preserveAspectRatio: 'xMidYMid slice'
+        }
+      }
       return (
-        <div>
-          AMOUNT PAID
-          <br/><br/>
-          <Input />
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr' }}>
+          <div>
+            AMOUNT PAID
+            <Lottie options={defaultOptions}
+              height={250}
+              width={250}
+            />
+          </div>
+          <div>
+            <Input placeholder='Enter Amount Paid'/>
+          </div>
         </div>
       )
     }

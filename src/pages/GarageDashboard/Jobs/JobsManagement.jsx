@@ -2,8 +2,8 @@ import React, { Component } from 'react'
 import { Tabs } from 'antd'
 import RequestTable from './IncomingRequests'
 import BookingTable from './Bookings'
-import ActiveJobTable from './ActiveJobs';
-import CompletedJobTable from './CompletedJobs';
+import ActiveJobTable from './ActiveJobs'
+import CompletedJobTable from './CompletedJobs'
 
 const { TabPane } = Tabs
 

@@ -4,6 +4,7 @@ import JobsManagement from './Jobs/JobsManagement'
 import TopBar from './TopBar'
 import Payments from './Payments/Payments'
 import PartsManagement from './Parts/PartsManagement'
+import ReportsSummary from './Reports/ReportsSummary'
 
 const { TabPane } = Tabs
 
@@ -23,7 +24,7 @@ class GarageDashboard extends Component {
             <Payments />
           </TabPane>
           <TabPane tab="REPORTS" key="4">
-            Content of Tab Pane 3
+            <ReportsSummary />
           </TabPane>
         </Tabs>
         ,

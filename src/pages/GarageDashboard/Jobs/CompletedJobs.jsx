@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Table, Button } from 'antd'
-import AcceptJobModal from './AcceptJobModal';
+import AcceptJobModal from './AcceptJobModal'
 
 const columns = [
   { title: 'DATE', dataIndex: 'date', key: 'date' },
