@@ -1,5 +1,7 @@
 import React from 'react'
 import { Modal, Button, Input, Form, Radio, Divider } from 'antd'
+import Lottie from 'react-lottie'
+import animationData from '../../../assets/lotties/credit-card.json'
 
 const RadioGroup = Radio.Group
 
@@ -62,11 +64,28 @@ class AcceptJobModal extends React.Component {
       )
     }
     if (method === 'Card'){
+      const defaultOptions = {
+        loop: true,
+        autoplay: true, 
+        animationData: animationData,
+        rendererSettings: {
+          preserveAspectRatio: 'xMidYMid slice'
+        }
+      }
+
       return (
-        <div>
-          CARD DETAILS
-          <br/><br/>
-          <Input />
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr' }}>
+          <div>
+            CARD DETAILS
+            <Lottie options={defaultOptions}
+              height={250}
+              width={250}
+            />
+          </div>
+          <div>
+            <br/><br/>
+            <Input />
+          </div>
         </div>
       )
     }
@@ -102,7 +121,7 @@ class AcceptJobModal extends React.Component {
          <div>
            Cost 
            <br/>
-           Shs 6000.00
+           <span style={{color : 'orange'}}>Shs 6000.00</span>
          </div>
          <Divider />
          {this.chooseMethod()}
