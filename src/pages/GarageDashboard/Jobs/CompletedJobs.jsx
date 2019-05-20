@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Table, Button } from 'antd'
+import AcceptJobModal from './AcceptJobModal';
 
 const columns = [
   { title: 'DATE', dataIndex: 'date', key: 'date' },
@@ -12,7 +13,7 @@ const columns = [
     key: 'actions',
     render: () => (
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr' }}>
-        <Button type="primary">Accept</Button>
+        <AcceptJobModal service={data} />
       </div>
     )
   }
