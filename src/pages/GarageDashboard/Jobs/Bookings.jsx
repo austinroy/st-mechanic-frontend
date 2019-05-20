@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Table, Button } from 'antd'
 import BookingModal from './BookingModal'
+import UpdateBookingModal from './UpdateBookingModal'
 
 const columns = [
   { title: 'TIME SLOT', dataIndex: 'timeslot', key: 'timeslot' },
@@ -15,7 +16,7 @@ const columns = [
     render: () => (
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr' }}>
         <BookingModal service={data} />
-        <Button>Add Service</Button>
+        <UpdateBookingModal service={data} />
       </div>
     )
   }

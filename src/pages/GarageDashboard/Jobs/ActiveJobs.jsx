@@ -1,6 +1,7 @@
 import React from 'react'
 import { Table, Button } from 'antd'
 import ActiveModal from './ActiveJobModal'
+import UpdateBookingModal from './UpdateBookingModal'
 
 const columns = [
   { title: 'TIME SLOT', dataIndex: 'timeremaining', key: 'timeslot' },
@@ -14,8 +15,8 @@ const columns = [
     key: 'actions',
     render: () => (
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr' }}>
-        <ActiveModal service={data} />
-        <Button>Complete</Button>
+        <UpdateBookingModal service={data} />
+        <Button type="primary">Complete</Button>
       </div>
     )
   }
