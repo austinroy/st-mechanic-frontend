@@ -2,4 +2,68 @@
   display: block;
   margin: 0 auto;
   padding: 10rem;
+  color: white;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding-top: 20rem;
+
+  .top-links{
+    text-transform: uppercase;
+    color: $color-white;
+    display: block;
+    .link-signup{
+      float: left;
+    }
+    .link-login{
+      float: right;
+    }
+  }
+
+  .bottom-link{
+    position: fixed;
+    text-transform: uppercase;
+    bottom: 0;
+    left: 50%;
+    right: 0;
+    height: 6rem;
+    background-color: rgba($color-grey-dark-3, 0.5);
+    color: white;
+    display: grid;
+    grid-template-columns: 9fr 1fr;
+    .text{
+      margin-top: 1.5rem;
+      font-size: 2rem;
+    }
+    .next-icon{
+      background-color: $color-primary;
+      color: $color-black;
+      font-size: 3rem;
+    }
+  }
+  
+  .signup-header{      
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: bold;
+    line-height: 71px;
+    font-size: 36px;
+
+    color: #565264;
+  }
+  .signup-subheader{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px;
+    font-size: 18px;
+
+    color: #9B9B9B;
+  }
+  .signup-link{
+    color: $color-primary;
+    &:hover{
+      color: $color-primary-light;
+      transform: scale(3.5)
+    }
+  }
 }

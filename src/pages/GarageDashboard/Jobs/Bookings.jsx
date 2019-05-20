@@ -4,7 +4,6 @@ import BookingModal from './BookingModal'
 
 const columns = [
   { title: 'TIME SLOT', dataIndex: 'timeslot', key: 'timeslot' },
-  { title: 'TIME REMAINING', dataIndex: 'time', key: 'time' },
   { title: 'DATE/TIME', dataIndex: 'date', key: 'date' },
   { title: 'NAME', dataIndex: 'name', key: 'name' },
   { title: 'CAR MODEL', dataIndex: 'model', key: 'model' },
@@ -16,7 +15,7 @@ const columns = [
     render: () => (
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr' }}>
         <BookingModal service={data} />
-        <Button>Message</Button>
+        <Button>Add Service</Button>
       </div>
     )
   }

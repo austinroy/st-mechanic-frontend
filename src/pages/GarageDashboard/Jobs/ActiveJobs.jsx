@@ -1,11 +1,9 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { Table, Button } from 'antd'
-import BookingModal from './BookingModal'
 import ActiveModal from './ActiveJobModal'
 
 const columns = [
   { title: 'TIME SLOT', dataIndex: 'timeremaining', key: 'timeslot' },
-  { title: 'TIME REMAINING', dataIndex: 'time', key: 'time' },
   { title: 'DATE/TIME', dataIndex: 'date', key: 'date' },
   { title: 'NAME', dataIndex: 'name', key: 'name' },
   { title: 'CAR MODEL', dataIndex: 'model', key: 'model' },
