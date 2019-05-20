@@ -20,13 +20,13 @@ class TopBar extends Component {
           style={{ lineHeight: '64px' }}
           className="nav-menu"
         >
-          <Menu.Item key="login" style={{ float: 'right' }}>
-            <a href="/contact" className="top-bar-link">My  Account</a>
+          <Menu.Item key="account" style={{ float: 'right' }}>
+            <a href="/account" className="top-bar-link">My  Account</a>
           </Menu.Item>
-          <Menu.Item key="login" style={{ float: 'right' }}>
-            <a href="/contact" className="top-bar-link">FAQ</a>
+          <Menu.Item key="faq" style={{ float: 'right' }}>
+            <a href="/faq" className="top-bar-link">FAQ</a>
           </Menu.Item>
-          <Menu.Item key="login" style={{ float: 'right' }}>
+          <Menu.Item key="contact" style={{ float: 'right' }}>
             <a href="/contact" className="top-bar-link">Contact Us</a>
           </Menu.Item>
         </Menu>

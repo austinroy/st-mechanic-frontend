@@ -1,5 +1,5 @@
 import React from 'react'
-import { Modal, Button } from 'antd';
+import { Modal, Button, Form, Input } from 'antd';
 
 class RequestModal extends React.Component {
   state = {
@@ -14,24 +14,51 @@ class RequestModal extends React.Component {
     });
   }
 
-  renderServiceDetails = service => {
+  responseForm = () => {
     return (
-      <div className="service-det">
+      <Form style={{ marginTop: '2rem'}}>
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 2fr'}}>
+            <div>LABOUR COST</div>
+            <Input />
+        </div>
+        <br/>
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 2fr'}}>
+            <div>PARTS COST</div>
+            <Input />
+        </div>
+        <br/>
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 2fr'}}>
+            <div>DIAGNOSTIC FEE (IF APPLICABLE)</div>
+            <Input />
+        </div>
+        <br/>
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 2fr'}}>
+            <div>TOTAL COST</div>
+            <Input />
+        </div>
+      </Form>
+    )
+  }
+
+  renderServiceDetails = service => {
+    const { category, type, notes } =  service
+    return (
+      <div className="service-det" style={{ backgroundColor: '#d5d7d6', padding: '2rem'}}>
         <h2>SERVICE DESCRIPTION</h2>
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr'}}>
-          <div className='titles' style={{ display: 'grid', gridTemplateColumns: 'auto'}}>
+        <div className="details">
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 3fr'}}>
             <div>CATEGORY</div>
-            <br/>
-            <div>SERVICE TYPE</div>
-            <br/>
-            <div>NOTES</div>
+            <div>{category}</div>
           </div>
-          <div classNam='details' style={{ display: 'grid', gridTemplateColumns: 'auto'}}>
-            <div>{service.category}</div>
-            <br/>
-            <div>{service.type}</div>
-            <br/>
-            <div>{service.notes}</div>
+          <br/>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 3fr'}}>
+            <div>SERVICE TYPE</div>
+            <div>{type}</div>
+          </div>
+          <br/>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 3fr'}}>
+            <div>NOTES</div>
+            <div>{notes}</div>
           </div>
         </div>
       </div>
@@ -71,11 +98,13 @@ class RequestModal extends React.Component {
           title={title}
           visible={visible}
           onOk={this.handleOk}
+          okText='Respond'
           confirmLoading={confirmLoading}
           onCancel={this.handleCancel}
+          width={960}
         >
           {this.renderServiceDetails(service)}
-          <p>{ModalText}</p>
+          {this.responseForm()}
         </Modal>
       </div>
     );
