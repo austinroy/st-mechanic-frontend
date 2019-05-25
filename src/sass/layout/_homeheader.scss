@@ -3,17 +3,102 @@
   width: 100%;
   height: 82.3rem;
   top: -.1rem;
-  display: block;
+  display: grid;
+  grid-template-columns: 1fr;
 
   background: rgba(0, 0, 0, 0.21);
   background-image: linear-gradient(
         to left top,
-        rgba(black, 0.2),
-        rgba(black, 0.4)),
-      url(../assets/img/71af7228808379.5aa0ce53a7ee1.jpg);
+        rgba(black, 0.7),
+        rgba(black, 0.7)),
+      url(../assets/img/automobile-car-car-repair.jpg);
   background-size: cover;
   // padding: 5rem;
   margin: 0 auto;
+
+  .header-nav{
+    height: 9rem;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    padding-top: 10rem;
+  }
+
+  .home-logo {
+    height: 9rem;
+    width: 27rem;
+    margin-left: 10rem;
+  }
+
+  .intro-text{
+    font-family: Work Sans;
+    color: white;
+    font-size: 5rem;
+    text-align: left;
+    padding: 2rem;
+    margin-left: 2rem;
+    margin-top: 5rem;
+    width: 70%;
+    font-weight: bold;
+  }
+
+  .underline-bottom{
+    border-bottom: .5rem solid $color-white;
+  }
+
+  .intro{
+    margin-left: 5rem;
+  }
+
+  .intro-sub{
+    font-family: Work Sans;
+    color: white;
+    font-size: 2rem;
+    text-align: left;
+    padding: 2rem;
+    margin-left: 2rem;
+    margin-top: 5rem;
+    width: 75%;
+  }
+
+  .home-links{ 
+    text-align: right;  
+    margin-right: 3rem;
+    bottom: 0;
+    .home-link{
+      &--regular{
+        margin: 3rem;
+        font-size: 1.8rem;
+        text-decoration: none;
+        font-family: 'Open Sans', sans-serif;
+        color: $color-white;
+      }
+      &--btn{
+        &:link,
+      &:visited {
+        font-family: "Open Sans", sans-serif;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 0.5rem 3rem;
+        border-radius: 10rem;
+
+        width: 13rem;
+        height: 4rem;
+        font-size: 1.8rem;
+        background-color: $color-white;
+        color: $color-black;
+      }
+        &-inverted{
+          margin: 3rem;
+          background: transparent;
+          font-size: 1.8rem;
+          padding: 0.5rem 3rem;
+          border-radius: 10rem;
+          border: 1px solid $color-white;
+          color: $color-white;
+        }
+      }
+    }
+  }
   
   .header-content{
     .header-slogan{
