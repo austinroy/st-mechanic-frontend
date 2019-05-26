@@ -1,24 +1,46 @@
 .home-footer{
-  background: #F2F2F2;
+  background:#1B1C1D;
   overflow: auto;
   &-content{
+    font-family: 'Avenir';
+    color: white;
     margin: 5rem;
-    padding: 8rem;
-    width: 100%;
-    height: 54.5rem;
-    left: 0px;
-    top: 409.6rem;
     
 
     display: grid;
     grid-template-columns: auto auto auto auto auto;
     grid-gap: 1rem;
-    padding: 1rem;
+    .footer-section{
+      display: grid;
+      grid-template-columns: auto;
+      .footer-links{
+        color: #B9B5B5;
+        font-size: 1.5rem;
+      }
+    }
+    .footer-header{
+      text-transform: uppercase;
+      font-weight: bold;
+    }
     .foot-logo{
-      width: 21.8rem;
-      height: 7.3rem;
+      width: 24.9rem;
+      height: 8.3rem;
       left: 8.4rem;
       top: 420.7rem;
     }
+  }
+}
+.rights-reserved{
+  padding: 2% 0;
+  background-color: #000000;
+  color: #707070;
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-size: 2rem;
+  margin: 0 auto;
+  .rights-content{
+    padding: 1% 0;
+    margin: 0 auto;
+
   }
 }

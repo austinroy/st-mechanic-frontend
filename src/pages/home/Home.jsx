@@ -12,8 +12,6 @@ class Home extends Component {
       <div className="home-page">
         <Header />
         <About />
-        <Pricing />
-        <GetQuotes />
         <HomeFooter />
       </div>
     )
