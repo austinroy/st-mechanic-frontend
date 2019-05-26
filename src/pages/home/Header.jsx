@@ -1,4 +1,4 @@
-import React, { useState, Component } from 'react'
+import React, { Component } from 'react'
 import Logo from '../../assets/logos/Logo-White-&-Yellow.png'
 import GarageDrawer from './GarageDrawer'
 
