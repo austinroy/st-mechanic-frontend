@@ -1,11 +1,45 @@
 .about-section{
   // position: absolute;
-  width: 144rem;
-  height: 53rem;
-  margin: auto;
-
-
+  font-family: 'Avenir';
   background: #FAFAFA;
+
+  .about-customers{
+    background-color: #F8F4D9;
+
+    .shadowed-card{
+      box-shadow: 0 1.3rem 1.3rem rgba($color-black, .25);
+      padding: 2rem;
+      .yellow{
+        background-color: #FFCF00;
+      }
+    }
+    
+    .customer-cards{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-gap: 3rem;
+      padding: 3rem;
+      .card-header{
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+      .card-detail{
+        font-size: 1.2rem;
+        color: #8D8686;
+      }
+    }
+
+    .core-values{
+      padding: 23.2rem;
+      padding-top: 10rem;
+      .values{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 20.3rem;
+      }
+    }
+
+  }
 
   .about-services{
     display: grid;

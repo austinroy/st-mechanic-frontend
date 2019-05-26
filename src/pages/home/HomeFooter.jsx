@@ -11,7 +11,7 @@ const HomeFooter = () => (
         <span className="footer-header">Useful Links</span>
       </div>
       <div className="foot-services">
-      <span className="footer-header">Services</span>
+        <span className="footer-header">Services</span>
       </div>
       <div className="foot-contact-us">
         <span className="footer-header">Contact US</span>
