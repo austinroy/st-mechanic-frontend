@@ -3,6 +3,45 @@
   font-family: 'Avenir';
   background: #FAFAFA;
 
+  .about-garages{
+    .summary-grid{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 10rem;
+      padding: 36.8rem;
+      padding-top: 3rem;
+      padding-bottom: 10rem;
+    }
+    .garage-breakdown{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    .breakdown-header{
+      font-size: 3rem;
+      color: #161719;
+    }
+    .breakdown{
+      &-requirements{
+        padding-top: 5.4rem;
+        background-color: #F7F8FC;
+        padding-left: 36rem;
+        padding-bottom: 3rem;
+      }
+      &-reasons{
+        padding-top: 5.4rem;
+        background-color: #FBF8E8;
+        padding-left: 14rem;
+        padding-bottom: 3rem;
+      }
+      &-details{
+        font-size: 1.5rem;
+        line-height: 4rem;
+        color: #161719;
+        font-weight: bold;
+      }
+    }
+  }
+
   .about-customers{
     background-color: #F8F4D9;
 
@@ -40,59 +79,6 @@
       }
     }
 
-  }
-
-  .about-services{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-gap: 1rem;
-    padding: 1rem;
-
-    .services{
-
-      color: #000000;
-      &-1{
-        position: relative;
-        margin-right: auto;
-        width: 33rem;
-        height: 10rem;
-      }
-      &-2{
-        position: relative;
-        margin: 0 auto;
-        width: 33rem;
-        height: 10rem;
-      }
-      &-3{
-        position: relative;
-        margin-left: auto;
-        width: 33rem;
-        height: 10rem;
-      }
-    }
-  }
-  .service-description{
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 5rem;
-    font-size: 2.5rem;
-    text-align: center;
-
-    color: #828282;
-  }
-  .service-label{
-    width: 32.5rem;
-    height: 10rem;
-
-    font-family: Rock Salt;
-    font-style: normal;
-    font-weight: normal;
-    line-height: 10rem;
-    font-size: 2.4rem;
-    text-align: center;
-
-    color: #000000;
   }
 }
 

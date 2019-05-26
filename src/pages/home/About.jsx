@@ -1,5 +1,5 @@
 import React from 'react'
-import { Tabs, Card } from 'antd'
+import { Tabs, Card, Icon } from 'antd'
 
 const { TabPane } = Tabs
 
@@ -11,7 +11,11 @@ const About = () => {
       </div>
       <Tabs
         defaultActiveKey="customers"
-        tabBarStyle={{ textAlign: 'center', marginBottom: '0' }}
+        tabBarStyle={{
+          textAlign: 'center',
+          marginBottom: '0',
+          color: 'black'
+        }}
       >
         <TabPane tab="For Customers" key="customers">
           <div className="about-customers">
@@ -88,7 +92,68 @@ const About = () => {
           </div>
         </TabPane>
         <TabPane tab="For Garages" key="garages">
-          Content of Tab Pane 2
+          <div className="about-garages">
+            <div className="summary-grid">
+              <div className="garage-process">
+                <h2>SIGN IN</h2>
+                <p className="process-detail">
+                  Enter your garage details and get an account with us. We shall
+                  get in touch. Update profile once approved.
+                </p>
+              </div>
+              <div className="garage-process">
+                <h2>RESPOND TO A QUOTE</h2>
+                <p className="process-detail">
+                  View the list of available requests. Pick any and send a free,
+                  fast, fair and transparent price quote.
+                </p>
+              </div>
+              <div className="garage-process">
+                <h2>SEE BOOKINGS</h2>
+                <p className="process-detail">
+                  View a list of bookings for your garage and send confirmation
+                  message to customers.
+                </p>
+              </div>
+              <div className="garage-process">
+                <h2>CHECK IN CUSTOMERS AND EARN</h2>
+                <p className="process-detail">
+                  Check in customers car to your garage on the date of the
+                  booking and start the work.
+                </p>
+              </div>
+            </div>
+            <div className="garage-breakdown">
+              <div className="breakdown-requirements">
+                <span className="breakdown-header">
+                  What are the requirements?
+                </span>
+                <div className="breakdown-details">
+                  <Icon type="check" /> Must inspire TRUST every single time
+                  <br />
+                  <Icon type="check" /> Must be a registered business <br />
+                  <Icon type="check" /> Must be centrally managed <br />
+                  <Icon type="check" /> Must be in a secure location <br />
+                  <Icon type="check" /> Must demonstrate staff competence 
+                  <br />
+                </div>
+              </div>
+              <div className="breakdown-reasons">
+                <span className="breakdown-header">Why join St. Mechanic?</span>
+                <div className="breakdown-details">
+                  <Icon type="check" /> To access to a wider market
+                  <br />
+                  <Icon type="check" /> To benefit from Automated processes
+                  hence efficiency <br />
+                  <Icon type="check" /> To gain competitive advantage using our
+                  tools <br />
+                  <Icon type="check" /> To highlight what you are already great
+                  at <br />
+                  <br />
+                </div>
+              </div>
+            </div>
+          </div>
         </TabPane>
       </Tabs>
     </div>
