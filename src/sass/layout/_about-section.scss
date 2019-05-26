@@ -1,63 +1,84 @@
 .about-section{
   // position: absolute;
-  width: 144rem;
-  height: 53rem;
-  margin: auto;
-
-
+  font-family: 'Avenir';
   background: #FAFAFA;
 
-  .about-services{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-gap: 1rem;
-    padding: 1rem;
-
-    .services{
-
-      color: #000000;
-      &-1{
-        position: relative;
-        margin-right: auto;
-        width: 33rem;
-        height: 10rem;
+  .about-garages{
+    .summary-grid{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 10rem;
+      padding: 36.8rem;
+      padding-top: 3rem;
+      padding-bottom: 10rem;
+    }
+    .garage-breakdown{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    .breakdown-header{
+      font-size: 3rem;
+      color: #161719;
+    }
+    .breakdown{
+      &-requirements{
+        padding-top: 5.4rem;
+        background-color: #F7F8FC;
+        padding-left: 36rem;
+        padding-bottom: 3rem;
       }
-      &-2{
-        position: relative;
-        margin: 0 auto;
-        width: 33rem;
-        height: 10rem;
+      &-reasons{
+        padding-top: 5.4rem;
+        background-color: #FBF8E8;
+        padding-left: 14rem;
+        padding-bottom: 3rem;
       }
-      &-3{
-        position: relative;
-        margin-left: auto;
-        width: 33rem;
-        height: 10rem;
+      &-details{
+        font-size: 1.5rem;
+        line-height: 4rem;
+        color: #161719;
+        font-weight: bold;
       }
     }
   }
-  .service-description{
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 5rem;
-    font-size: 2.5rem;
-    text-align: center;
 
-    color: #828282;
-  }
-  .service-label{
-    width: 32.5rem;
-    height: 10rem;
+  .about-customers{
+    background-color: #F8F4D9;
 
-    font-family: Rock Salt;
-    font-style: normal;
-    font-weight: normal;
-    line-height: 10rem;
-    font-size: 2.4rem;
-    text-align: center;
+    .shadowed-card{
+      box-shadow: 0 1.3rem 1.3rem rgba($color-black, .25);
+      padding: 2rem;
+      border: 0px;
+    }
+    .yellow{
+      background-color: #FFCF00;
+    }
+    
+    .customer-cards{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-gap: 3rem;
+      padding: 3rem;
+      .card-header{
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+      .card-detail{
+        font-size: 1.4rem;
+        color: #8D8686;
+      }
+    }
 
-    color: #000000;
+    .core-values{
+      padding: 23.2rem;
+      padding-top: 10rem;
+      .values{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 20.3rem;
+      }
+    }
+
   }
 }
 

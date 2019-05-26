@@ -11,7 +11,9 @@ class TopBar extends Component {
     return (
       <header className="home-nav">
         <div className="__logo-box">
-          <img src={logo} className="__logo" alt="logo" />
+          <a href="/">
+            <img src={logo} className="__logo" alt="logo" />
+          </a>
         </div>
         <Menu
           theme="light"
