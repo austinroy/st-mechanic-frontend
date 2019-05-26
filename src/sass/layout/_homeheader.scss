@@ -20,7 +20,7 @@
     height: 9rem;
     display: grid;
     grid-template-columns: 1fr 5fr;
-    padding-top: 10rem;
+    padding-top: 5rem;
   }
 
   .home-logo {
@@ -30,19 +30,24 @@
   }
 
   .intro-text{
-    font-family: Work Sans;
+    font-family: 'Open Sans';
     color: white;
-    font-size: 5rem;
+    font-size: 5.2rem;
     text-align: left;
     padding: 2rem;
     margin-left: 2rem;
     margin-top: 5rem;
     width: 70%;
-    font-weight: bold;
+    font-weight: bolder;
   }
 
   .underline-bottom{
     border-bottom: .5rem solid $color-white;
+  }
+
+  .underline-bottom-yellow{
+    padding-bottom: 1rem;
+    border-bottom: .2rem solid #F9B932;
   }
 
   .intro{
@@ -50,14 +55,15 @@
   }
 
   .intro-sub{
-    font-family: Work Sans;
-    color: white;
+    font-family: 'Open Sans';
+    color: #DBD5D8;
     font-size: 2rem;
     text-align: left;
     padding: 2rem;
     margin-left: 2rem;
     margin-top: 5rem;
     width: 75%;
+    font-weight: lighter;
   }
 
   .home-links{ 

@@ -13,7 +13,7 @@ class Header extends Component {
 
   render(){
     return (
-      <div className="header-home">
+      <div className="header-home" style={{ height: '100vh'}}>
         <div className="header-nav">
           <div>
             <img src={Logo} alt="logo" className="home-logo" />
@@ -44,7 +44,7 @@ class Header extends Component {
           <p className="intro-sub">
             One stop shopping for all your automotive needs
             <br />
-            Join us today
+            <span className="underline-bottom-yellow">Join us today</span>
           </p>
         </div>
         <GarageDrawer
