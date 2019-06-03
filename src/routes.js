@@ -9,6 +9,11 @@ import GarageDashboard from './pages/GarageDashboard/GarageDashboard'
 import GarageLogin from './pages/Auth/GarageLogin'
 import GarageSignUp from './pages/Auth/GarageSignUp'
 import SignUp from './pages/Auth/SignUp'
+import Authorization from './components/Authorization'
+
+const User = Authorization(['user'])
+const Garage = Authorization(['garage'])
+const Admin = Authorization(['user', 'garage', 'admin'])
 
 const Routes = () => (
   <App>
@@ -18,7 +23,11 @@ const Routes = () => (
       <Route exact path="/signup" component={SignUp} />
       <Route exact path="/garage-login" component={GarageLogin} />
       <Route exact path="/garage-signup" component={GarageSignUp} />
-      <Route exact path="/garagedashboard" component={GarageDashboard} />
+      <Route
+        exact
+        path="/garagedashboard"
+        component={Garage(GarageDashboard)}
+      />
       <Route component={NotFound} />
     </Switch>
   </App>

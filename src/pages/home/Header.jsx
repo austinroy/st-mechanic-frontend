@@ -22,7 +22,7 @@ class Header extends Component {
             <a href="#" className="home-link--regular">
               ABOUT US
             </a>
-            <a href="#" className="home-link--regular">
+            <a href="#how-it-works" className="home-link--regular">
               HOW IT WORKS
             </a>
             <a href="#" className="home-link--regular" onClick={() => this.toggleGarageDrawer()} >

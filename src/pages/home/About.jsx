@@ -5,7 +5,7 @@ const { TabPane } = Tabs
 
 const About = () => {
   return (
-    <div className="about-section">
+    <div className="about-section" id="how-it-works">
       <div className="u-center-text u-margin-top-medium">
         <h2>HOW IT WORKS</h2>
       </div>
