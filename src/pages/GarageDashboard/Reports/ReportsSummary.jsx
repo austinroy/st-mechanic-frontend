@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
 import { DatePicker, Card, Statistic } from 'antd'
+import TopMechanicsTable from './TopMechanicsTable'
 
 const { RangePicker } = DatePicker
 
 class ReportsSummary extends Component {
   render() {
     return (
-      <div className="reports" style={{ padding: '7rem' }}>
+      <div className="garage-reports" style={{ padding: '7rem' }}>
         <div>
           REPORTS FOR <RangePicker />
         </div>
@@ -86,6 +87,14 @@ class ReportsSummary extends Component {
                 Repudiandae quae molestias natus.
               </div>
             </Card>
+          </div>
+        </div>
+        <div className="top-mech-grid">
+          <div className="mech-table">
+            <TopMechanicsTable />
+          </div>
+          <div className="mech-table">
+            <TopMechanicsTable />
           </div>
         </div>
       </div>

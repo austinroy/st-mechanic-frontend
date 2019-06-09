@@ -5,6 +5,7 @@ import TopBar from './TopBar'
 import Payments from './Payments/Payments'
 import PartsManagement from './Parts/PartsManagement'
 import ReportsSummary from './Reports/ReportsSummary'
+import Animate from 'rc-animate'
 
 const { TabPane } = Tabs
 

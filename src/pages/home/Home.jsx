@@ -5,6 +5,7 @@ import HomeNav from './HomeNav.jsx'
 import Pricing from './Pricing.jsx'
 import GetQuotes from './GetQuotes.jsx'
 import HomeFooter from './HomeFooter.jsx'
+import { BackTop } from 'antd'
 
 class Home extends Component {
   render() {
@@ -12,6 +13,7 @@ class Home extends Component {
       <div className="home-page">
         <Header />
         <About />
+        <BackTop />
         <HomeFooter />
       </div>
     )

@@ -1,0 +1,9 @@
+.garage-reports{
+  background-color: #FFFFFF;
+  .top-mech-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5rem;
+    padding: 5rem
+  }
+}
