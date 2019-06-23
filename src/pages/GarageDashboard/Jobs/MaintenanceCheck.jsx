@@ -1,8 +1,12 @@
 import React, { Component } from 'react'
 import TopBar from './../TopBar'
-import { Table, Input, Select } from 'antd'
+import WheelsTable from './MaintenanceTables/WheelsTable';
+import ElectricalTable from './MaintenanceTables/ElectricalTable';
+import SuspensionTable from './MaintenanceTables/SuspensionTable';
 
 class MaintenanceCheck extends Component {
+  state = {}
+
   render() {
     return (
       <div style={{ backgroundColor: 'white' }}>
@@ -42,9 +46,9 @@ class MaintenanceCheck extends Component {
             </div>
           </div>
           <div className="maintenancecheckbody">
-            <Table>
-              
-            </Table>
+            <WheelsTable />
+            <SuspensionTable />
+            <ElectricalTable />
           </div>
         </div>
       </div>
