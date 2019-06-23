@@ -16,7 +16,9 @@ const columns = [
     render: () => (
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr' }}>
         <UpdateBookingModal service={data} />
-        <Button type="primary">Complete</Button>
+        <Button type="primary" href="/maintenance-check">
+          Complete
+        </Button>
       </div>
     )
   }

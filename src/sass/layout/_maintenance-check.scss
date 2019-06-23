@@ -1,0 +1,38 @@
+.maintenance-check-container{
+  padding-left: 14.3rem;
+  padding-right: 14.3rem;
+}
+
+.status-check-header{
+  background-color: #FCFBF2;
+  display: block;
+  overflow: auto;
+  .header-content{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    padding: 7.3rem;
+    grid-gap: 5rem;
+    .content-row{
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+    }
+    .detail-label{
+      text-transform: uppercase;
+      font-weight: bold;
+      color: black;
+    }
+  }
+
+  .inner-header{
+    overflow: auto;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    background-color: #F9B932;
+    color: #FFFFFF;
+    font-weight: bold;
+    .header-text{
+      padding-right: 2.5rem;
+      float: right;
+    }
+  }
+}
