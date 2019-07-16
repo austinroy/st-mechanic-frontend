@@ -68,24 +68,15 @@ const About = () => {
               <div className="values">
                 <div className="value u-margin-top-small">
                   <h2 className="u-center-text">Trust</h2>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Exercitationem doloremque nisi veniam blanditiis cum ipsam
-                  repudiandae? Non repellat sapiente optio veniam earum vitae
-                  dignissimos a? Enim adipisci repellendus numquam dolores?
+                  We look to create a platform where you can trust a garage to provide you with the best quality service possible.
                 </div>
                 <div className="value">
                   <h2 className="u-center-text">Transparency</h2>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Nostrum eius iusto assumenda quasi alias nobis saepe.
-                  Repellendus, nesciunt. Nemo obcaecati error soluta, dolorem et
-                  quisquam voluptates adipisci ducimus neque laudantium?
+                  Be able to track all processes from start to finish with all your details available at the click of a buttton.
                 </div>
                 <div className="value">
                   <h2 className="u-center-text">Convenience</h2>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Nostrum cum impedit in asperiores numquam iusto aperiam quas
-                  ab eius, iure, ratione, debitis cupiditate molestias fugit sit
-                  voluptatibus perspiciatis corrupti quos.
+                  Access a variety of services from the comfort of your computer.
                 </div>
               </div>
             </div>

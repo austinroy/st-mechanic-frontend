@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import TopBar from './../TopBar'
 import WheelsTable from './MaintenanceTables/WheelsTable';
-import ElectricalTable from './MaintenanceTables/ElectricalTable';
-import SuspensionTable from './MaintenanceTables/SuspensionTable';
+import ElectricalTable from './MaintenanceTables/SuspensionTable';
+import SuspensionTable from './MaintenanceTables/ElectricalTable';
 
 class MaintenanceCheck extends Component {
   state = {}
