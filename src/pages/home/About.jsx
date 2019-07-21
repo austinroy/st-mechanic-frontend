@@ -21,6 +21,15 @@ const About = () => {
           <div className="about-customers">
             <div className="customer-cards">
               <Card className="shadowed-card">
+                <div className="u-center-text">
+                  <Icon
+                    style={{
+                      fontSize: '5rem'
+                    }}
+                    type="unordered-list"
+                  />
+                </div>
+                <br />
                 <h2 className="u-center-text card-header">GET A QUOTE</h2>
                 <p className="card-detail">
                   Give us your car details and choose the area of service you
@@ -29,6 +38,15 @@ const About = () => {
                 </p>
               </Card>
               <Card className="shadowed-card yellow">
+                <div className="u-center-text">
+                  <Icon
+                    style={{
+                      fontSize: '5rem'
+                    }}
+                    type="notification"
+                  />
+                </div>
+                <br />
                 <h2 className="u-center-text card-header">
                   SIGN IN & REVIEW QUOTES
                 </h2>
@@ -38,6 +56,15 @@ const About = () => {
                 </p>
               </Card>
               <Card className="shadowed-card">
+                <div className="u-center-text">
+                  <Icon
+                    style={{
+                      fontSize: '5rem'
+                    }}
+                    type="calendar"
+                  />
+                </div>
+                <br />
                 <h2 className="u-center-text card-header">
                   BOOK AN APPOINTMENT
                 </h2>
@@ -47,6 +74,15 @@ const About = () => {
                 </p>
               </Card>
               <Card className="shadowed-card yellow">
+                <div className="u-center-text">
+                  <Icon
+                    style={{
+                      fontSize: '5rem'
+                    }}
+                    type="setting"
+                  />
+                </div>
+                <br />
                 <h2 className="u-center-text card-header">
                   GET YOUR CAR FIXED
                 </h2>
@@ -68,15 +104,18 @@ const About = () => {
               <div className="values">
                 <div className="value u-margin-top-small">
                   <h2 className="u-center-text">Trust</h2>
-                  We look to create a platform where you can trust a garage to provide you with the best quality service possible.
+                  We look to create a platform where you can trust a garage to
+                  provide you with the best quality service possible.
                 </div>
                 <div className="value">
                   <h2 className="u-center-text">Transparency</h2>
-                  Be able to track all processes from start to finish with all your details available at the click of a buttton.
+                  Be able to track all processes from start to finish with all
+                  your details available at the click of a buttton.
                 </div>
                 <div className="value">
                   <h2 className="u-center-text">Convenience</h2>
-                  Access a variety of services from the comfort of your computer.
+                  Access a variety of services from the comfort of your
+                  computer.
                 </div>
               </div>
             </div>
