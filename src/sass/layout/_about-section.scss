@@ -12,6 +12,42 @@
       padding-top: 3rem;
       padding-bottom: 10rem;
     }
+
+    .shadowed-card{
+      box-shadow: 0 1.3rem 1.3rem rgba($color-black, .25);
+      padding: 2rem;
+      border: 0px;
+    }
+    .blue{
+      background-color: #3C56E6;
+      color: white;
+    }
+
+    .garage-cards{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-gap: 3rem;
+      padding: 3rem;
+      .card-header{
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+      .card-detail{
+        font-size: 1.4rem;
+        color: #8D8686;
+      }
+      .shadowed-card{
+        box-shadow: 0 1.3rem 1.3rem rgba($color-black, .25);
+        padding: 2rem;
+        border: 0px;
+      }
+      .blue{
+        background-color: #3C56E6;
+        .card-detail{
+          color: white;
+        }
+      }
+    }
     .garage-breakdown{
       display: grid;
       grid-template-columns: 1fr 1fr;

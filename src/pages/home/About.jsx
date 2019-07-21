@@ -123,36 +123,75 @@ const About = () => {
         </TabPane>
         <TabPane tab="For Garages" key="garages">
           <div className="about-garages">
-            <div className="summary-grid">
-              <div className="garage-process">
-                <h2>SIGN IN</h2>
-                <p className="process-detail">
+            <div className="garage-cards">
+              <Card className="shadowed-card">
+                <div className="u-center-text">
+                  <Icon
+                    style={{
+                      fontSize: '5rem'
+                    }}
+                    type="login"
+                  />
+                </div>
+                <br />
+                <h2 className="u-center-text card-header">SIGN IN</h2>
+                <p className="card-detail">
                   Enter your garage details and get an account with us. We shall
                   get in touch. Update profile once approved.
                 </p>
-              </div>
-              <div className="garage-process">
-                <h2>RESPOND TO A QUOTE</h2>
-                <p className="process-detail">
+              </Card>
+              <Card className="shadowed-card blue">
+                <div className="u-center-text">
+                  <Icon
+                    style={{
+                      fontSize: '5rem'
+                    }}
+                    type="notification"
+                  />
+                </div>
+                <br />
+                <h2 className="u-center-text card-header">RESPOND TO QUOTES</h2>
+                <p className="card-detail">
                   View the list of available requests. Pick any and send a free,
                   fast, fair and transparent price quote.
                 </p>
-              </div>
-              <div className="garage-process">
-                <h2>SEE BOOKINGS</h2>
-                <p className="process-detail">
+              </Card>
+              <Card className="shadowed-card">
+                <div className="u-center-text">
+                  <Icon
+                    style={{
+                      fontSize: '5rem'
+                    }}
+                    type="calendar"
+                  />
+                </div>
+                <br />
+                <h2 className="u-center-text card-header">SEE BOOKINGS</h2>
+                <p className="card-detail">
                   View a list of bookings for your garage and send confirmation
-                  message to customers.
+                  message to customers
                 </p>
-              </div>
-              <div className="garage-process">
-                <h2>CHECK IN CUSTOMERS AND EARN</h2>
-                <p className="process-detail">
+              </Card>
+              <Card className="shadowed-card blue">
+                <div className="u-center-text">
+                  <Icon
+                    style={{
+                      fontSize: '5rem'
+                    }}
+                    type="wallet"
+                  />
+                </div>
+                <br />
+                <h2 className="u-center-text card-header">
+                  CHECK IN CUSTOMERS AND EARN
+                </h2>
+                <p className="card-detail">
                   Check in customers car to your garage on the date of the
                   booking and start the work.
                 </p>
-              </div>
+              </Card>
             </div>
+            
             <div className="garage-breakdown">
               <div className="breakdown-requirements">
                 <span className="breakdown-header">

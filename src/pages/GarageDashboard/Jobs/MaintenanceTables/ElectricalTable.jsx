@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Table, Input, Select } from 'antd'
-import TextArea from 'antd/lib/input/TextArea';
+import TextArea from 'antd/lib/input/TextArea'
 
 const { Column, ColumnGroup } = Table
 const { Option } = Select
